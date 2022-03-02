@@ -1,0 +1,25 @@
+IF the argument count is equal to 1...			// This would imply that therea re no arguments
+	initialize char array length of 4096.
+	Print "Please enter standard input"
+	Use fgets() function to take standrad input and put into char array
+	Print "The standard output is:" then display the array above
+
+IF the argument count is greater than one     //implies that there are multiple arguments explicitly stated
+	Initilize counter variable to one 	//Set to 1 since the first argument is always the C file executable
+	Initialize file variable
+	initialize char array length of 4097
+	WHILE counter variable is less than the argument count	//loop which allows each argument to be processed
+		Open the file in the argument array at position "Counter".
+		IF the argument counter is equal to the dash
+			Print "Please enter the standard input"
+			Use fgets() functio to take standard input and put into char array
+			Print "The standard output is:" then display the array above
+		ELSE IF file opening results in NULL	// implies error
+			Result in perror message
+		ELSE IF fp is not NULL
+			print File: , and immediately after the correct file name
+			WHILE fread returns the correct amount of successful elements read (1) to the char array  		//implies 
+				write the char array tos standard output
+			close the file
+		Increment the counter
+End of program
