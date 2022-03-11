@@ -1,12 +1,12 @@
-CC=g++
+CC=gcc
 CFLAGS=-Wall -ggdb
 RM=/bin/rm -f
 
 .PHONY: tidy
 
-wycat_: wycat tidy
+wyla_: wyls tidy
 
-wycat: wycat.c
-	$(CC) $(CFLAGS) wycat.c -o wycat -I. 
+wyls: wyls.c
+	$(CC) $(CFLAGS) wyls.c -o wyls -I. 
 tidy:
 	$(RM) a.out core.*
